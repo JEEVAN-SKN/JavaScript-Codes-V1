@@ -13,5 +13,5 @@ console.log(this);
 
  sayName();
     //gives object [global] etc..
-        //not need to understand now
+    //not need to understand now
     // but gived global context window in browser
