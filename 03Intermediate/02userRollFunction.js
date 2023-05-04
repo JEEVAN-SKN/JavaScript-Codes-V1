@@ -34,9 +34,12 @@ var getUserRole = (name,role) => {
 
 }
 
-getUserRole("Jeevan","user"); //updates values in db
 
-console.log(getUserRole("Jeevan","user"));
+
+console.log(getUserRole("Jeevan","user")); // this works but below doesnt work
+
+getUserRole("Jeevan","user"); //updates values in db
+console.log(getUserRole); // doesnt print value, only shows function info 
 
 var getRole = getUserRole("Muni", "other");
 console.log(getRole);
