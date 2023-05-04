@@ -1,4 +1,5 @@
 // JS - Global Context 
+    // scans through code just to know the code 
 sayHello(); // it works even if is called before declatration
             // bsc JS has global context
 
@@ -10,8 +11,7 @@ if (2 === '2'){ //both are not same
     console.log("hi") //no exec
 }
 
-//Global context of browser is 'window'
-// works in browser not in node execution
+//Global context of browser is 'window' in chrome browser not in node execution
 
 // var myName = "hitesh";
 // if( myName === window.myName) {

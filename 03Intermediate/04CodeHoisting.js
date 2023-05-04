@@ -12,8 +12,13 @@
 var num = 2; //globalcontext
  
 function sayMe() {  //global
-    console.log("Say me"); //exec kicks in and goes away
+    console.log("Say me"); //exec kicks in and goes away 
+                    // for this type one line execution
 }
+
+// but when a function needs to be executed, separate 
+//execution context comes and goes awaya after the func is 
+// executed , and these stacks on as each adds on
 
 sayMe(); // exec context stacks till execution ends
 
@@ -55,7 +60,14 @@ function bigTipper(a) {
 
 // but we define func in a var then ...
 
-// bugTipper(110); //gets error 
+// gaintTipper("200");
+
+// var gaintTipper = function (a) {  
+//     var bill = parseInt(a);
+//     console.log(bill + 15);
+// };
+
+         //gets error 
 
 // //because 2nd rule says var decl with undefined before exec cntxt
 // // so when fucn define in a var only call after decl 
@@ -66,6 +78,8 @@ function bigTipper(a) {
 // }
 
 //  printing var before decl
+
+
 console.log(fname);  // gives undefined 
                 // bcs global context gets to know from
                 // below decl but 2nd rule it is undefined 
@@ -75,15 +89,18 @@ var fname = "Jeevan";
 // multple exec cntxt stacking over and 
     //prioritizing top of stack
 
+    // Smartness of Global Context
 console.log(fsname); // gives 'undefined' due 2nd rue of exex cntxt 
-var fsname = "Jeevan";
+var fsname = "Jeevan";// but not error because Global context Knows
+    // But we are using it prematurely 
 
 function sayName(){
     var fsname = "S K N"; 
     console.log(fsname);
 }
 sayName();// new exec context kicks in and result is S K N
-          // after execution cntxt goes off
+          // after execution cntxt goes off so 
+          // now after in global context fsname is Jeevan
 
 console.log(fsname);// new cntx but here call only after decl
             //so result is Jeevan
