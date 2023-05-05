@@ -25,5 +25,7 @@ function sayName() {
 }
 sayName();
 
-
-
+// //Side note : {} - this is a scope 
+//     eg: function {        }
+// but whenever they are sed in if, for, while loop
+// They are not considered as a scope 
