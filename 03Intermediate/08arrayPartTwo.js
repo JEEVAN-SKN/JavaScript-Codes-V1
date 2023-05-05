@@ -31,7 +31,8 @@ console.log(isEven(22));
 console.log('"every" method of array ');
 
 var result = [2,4,6,8].every(isEven); 
-    //here it is not isEven(), it is just isEven -- referencing the function (not executing the function)
+    //here it is not isEven(), it is just isEven --
+    //  referencing the function (not executing the function)
 console.log(result); 
 //as all are even - combinedresult - true 
 var result = [3,4,6,8].every(isEven);
@@ -39,7 +40,7 @@ console.log(result);
 // as one of is odd - combined result - false 
 
  //here in order to make a fucntion work over a given data
- // we had to first define that funciton and then type in data 
+ // we had to first define that function and then type in data 
  //and then call that function here
 
  //in order ot shorten the process we can use callback function( anonymous)
