@@ -1,4 +1,4 @@
-//small intro into this keyword
+//small intro to this keyword
 
 console.log(this); 
 //gives empty string {} in node exec

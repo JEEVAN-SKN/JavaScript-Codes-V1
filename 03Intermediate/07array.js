@@ -14,15 +14,20 @@ states[0] = "Punjab";
 console.log(states);
 console.log(states[0]);
 
+// Arrays can also diff datatypes 
+var user = ["jeevan", "sknjeev@gmail.com", 3, 34, true];
+console.log(user); // but diff datatypes not recommended 
+
+
  states.pop(); //removes last element
  console.log(states);
  states.push("Tamilnadu"); //adds at lastindex
  console.log(states);
 
- states.shift(); //removes first element  and 
+ states.shift(); //removes first element and left shifts all
  console.log(states);
  states.unshift("Karnataka");//adds as first element 
- console.log(states);
+ console.log(states);        // and right shifts all
 
  //get index of a element in an array
  console.log(states.indexOf("Delhi"));
