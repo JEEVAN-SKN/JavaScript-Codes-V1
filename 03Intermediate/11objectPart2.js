@@ -1,4 +1,4 @@
-var courseList = true;
+var courseList = 'hi_everyone';
 
 var user = {
     firstName : "Jeevan",
@@ -8,9 +8,10 @@ var user = {
     facebookSignedIn : true,
     courseList : [],
     buyCourse : function (courseName) {
-        //we need access to courseList of user obejct
+        //we need access to courseList of user object
         //not courseList variable so fro current context use 'this'
         this.courseList.push(courseName);
+        //we use this because there is another courselist out of object user 
     },
     getCourseCount: function () {
         return `${this.firstName} is enrolled in total of ${this.courseList.length} courses`;
@@ -35,6 +36,7 @@ user.buyCourse("ReactJSCourse");
 user.buyCourse("AngularJSCourse");
 console.log(user.getCourseCount());
 // values changes to 2 as two course is added  
+console.log(user.courseList)
 
 console.log(user.info());
 
