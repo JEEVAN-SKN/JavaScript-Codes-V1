@@ -1,6 +1,6 @@
 # JavaScript-Codes
 
-This repo contains all the codes I executed and assignments I finished while learning Javascript
+This repo contains all the codes that I have executed and assignments finished while learning Javascript
 through a playlist from youtube channel named Hitesh Choudary.
 
 ## This can be helpful for: ##
