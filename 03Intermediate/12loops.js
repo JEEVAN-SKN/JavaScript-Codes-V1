@@ -65,3 +65,5 @@ do{
     console.log(c);
     c++;
 }while (c<10)  //for lopp doesnt run cos c is > 10 but prints atleast once due to do statement 
+
+//upcoming for each loop
