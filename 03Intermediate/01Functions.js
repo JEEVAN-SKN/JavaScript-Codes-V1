@@ -9,7 +9,8 @@ sayHello();
 var Jeevan = "S K N ";
 function sayHi(name) {
     console.log("hello there", name);
-    console.log(`Heelo there ${name}`);
+    console.log("hello there "+name);
+    console.log(`Hi there ${name}`);
 }
 sayHi("Jeevan");
 sayHi(Jeevan);
@@ -24,4 +25,4 @@ namaste(); //doesngt print anythng
 console.log(namaste());
   
 var greetings = namaste(); //returns value to variable greetings
-console.log(greetings);  
+console.log(greetings,"_How are you?");  

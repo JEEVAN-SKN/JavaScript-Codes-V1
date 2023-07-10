@@ -17,7 +17,7 @@ function sayMe() {  //global
 }
 
 // but when a function needs to be executed, separate 
-//execution context comes and goes awaya after the func is 
+//execution context comes and goes away after the func is 
 // executed , and these stacks on as each adds on
 
 sayMe(); // exec context stacks till execution ends
@@ -45,7 +45,7 @@ tipper("5"); // gives result as 55
 // in order to change string to int
 
 function tipperb(a){
-    var bill =parseInt(a);
+    var bill =parseInt(a); // in order to change string to int
     console.log(bill+5);
 }
 tipperb("5"); //gives result as 10 by coverting str into int 

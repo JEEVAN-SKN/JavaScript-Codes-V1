@@ -1,4 +1,4 @@
-var user = "testprep";
+var user = "admin";
 
 switch(user) {
     case "admin":

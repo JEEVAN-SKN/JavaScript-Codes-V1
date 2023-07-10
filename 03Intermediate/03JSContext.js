@@ -7,8 +7,14 @@ function sayHello() {
       console.log("JS has Global context");
 }
 
-if (2 === '2'){ //both are not same 
+if (2 == '2'){ //not strict enough 
+    console.log("hi") 
+}
+
+if (2 === '2'){ //both are not same (strict)
     console.log("hi") //no exec
+} else {
+    console.log("bye")
 }
 
 //Global context of browser is 'window' in chrome browser not in node execution
@@ -18,5 +24,4 @@ if (2 === '2'){ //both are not same
 //     console.log("This is again a true statement");
 // }
 
-    // this gives error in node execution in cmd as node's 
-    // global context is not window 
+// this gives error in node execution in cmd as node's global context is not window 

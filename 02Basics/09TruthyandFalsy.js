@@ -1,4 +1,4 @@
-// FALSY VALUES :
+// FALSY VALUES : all have false condition always 
 // undefined 
 // null
 // 0
@@ -28,15 +28,50 @@ console.log('2'+'2');
 
 var user = 2;
 
-if ( user == '2') {    //but not gonna work with strict '==='
+if ( user == '2') {    
     console.log("Hi");
+} else {
+    console.log("Bye");
 }
+
 if ( user == 2) {
     console.log("Hi");
+} else {
+    console.log("Bye");
+} 
+
+if ( user === '2') {    //but not gonna work with strict '==='
+    console.log("Hi");
+} else {
+    console.log("Bye");
 }
+
+if ( user === 2) {    //but not gonna work with strict '==='
+    console.log("Hi");
+} else {
+    console.log("Bye");
+}
+
 if ( '2' == user) {
     console.log("Hi");
+} else {
+    console.log("Bye");
 }
+
 if ( 2 == user) {
     console.log("Hi");
+} else { 
+    console.log("Bye");
+}
+
+if ( '2' === user) {
+    console.log("Hi");
+} else {
+    console.log("Bye");
+}
+
+if ( 2 === user) {
+    console.log("Hi");
+} else { 
+    console.log("Bye");
 }

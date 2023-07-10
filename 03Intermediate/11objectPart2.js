@@ -8,8 +8,8 @@ var user = {
     facebookSignedIn : true,
     courseList : [],
     buyCourse : function (courseName) {
-        //we need access to courseList of user object
-        //not courseList variable so fro current context use 'this'
+        //we need access to courseList array of user object
+        //not courseList variable from globalc context so from current context use 'this'
         this.courseList.push(courseName);
         //we use this because there is another courselist out of object user 
     },
@@ -39,5 +39,11 @@ console.log(user.getCourseCount());
 console.log(user.courseList)
 
 console.log(user.info());
+console.log(user.getCourseCount());
+console.log(user.buyCourse()); //prints undefined as no return statement in func
+                            // just adds a undefined entry in courseList array
 
+console.log(user.buyCourse("MernCourse")); //prints undefined as no return statement in func
+                        // just adds a MernCourse entry in courseList array 
+console.log(user.courseList)
 

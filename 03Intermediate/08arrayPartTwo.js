@@ -1,41 +1,41 @@
-function isEven(element) {
+function isEven1(element) {
     if(element % 2 === 0 ){
         return true;
     }
     return false;
 }
-console.log(isEven(22));
+console.log(isEven1(22));
 
 //Code Optimization 1:
 
-function isEven(element) {
+function isEven2(element) {
     return element % 2 === 0;
 }
-console.log(isEven(22));
+console.log(isEven2(22));
 
 //holding func in a variable 
 
- var isEven = function(element) {
+ var isEven3 = function(element) {
     return element % 2 === 0;
  }
- console.log(isEven(22));
+ console.log(isEven3(22));
 
  //using arrow functions
 
- var isEven = (element) => {
+ var isEven4 = (element) => {
     return element % 2 === 0;
     //without it shows undefined 
  }
-  console.log(isEven(22));
+  console.log(isEven4(22));
 
-console.log('"every" method of array ');
+console.log('"every" method of array '); //quotations while printing a string
 
-var result = [2,4,6,8].every(isEven); 
+var result = [2,4,6,8].every(isEven4); 
     //here it is not isEven(), it is just isEven --
     //  referencing the function (not executing the function)
 console.log(result); 
 //as all are even - combinedresult - true 
-var result = [3,4,6,8].every(isEven);
+var result = [3,4,6,8].every(isEven4);
 console.log(result);
 // as one of is odd - combined result - false 
 
@@ -54,9 +54,9 @@ var result = [2,4,6,8].every((e) => {
 }); 
 console.log(result);
 
-//but if we remove return it behaves odd , 
+//but if we remove return it behaves odd , (here gives false for above prgrm)
 //it gives false and sometimes it may give undefined 
-//if u use {} curly braces - then should use retunn in callback func
+//if u use {} curly braces - then should use return in callback function
 // but if it is one line code and u dont want to use return 
 //then take out curly braces and use parenthesis there
 
