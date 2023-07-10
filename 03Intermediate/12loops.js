@@ -1,3 +1,5 @@
+// for loop 
+
 for (let i=1; i<=10; i++){  //printing numbers 1-10
     console.log(i);
 }
@@ -12,7 +14,7 @@ const myStates = [
     
 ]
 
-for (i=0; i<myStates.length; i++) {  //printing the netries of array
+for ( i=0; i<myStates.length; i++) {  //printing the etries of array
     console.log(myStates[i]);
 }
 
@@ -38,3 +40,28 @@ for ( i=0; i<myStates.length; i++) {
     if (typeof myStates[i] !== "string") break;  //when array element is not string stops loop execution(break)
     console.log(myStates[i]);                       
 }
+
+     //remember let declaration of a variable only lives till its scope 
+     //eg for the function scope under which it is declared 
+     //so it can be redeclared outside the scope again with no errors
+     //while not the same case for var type declaration 
+
+// while loop
+
+// while(i<myStates.length){
+//     console.log(myStates[i])   //prints for infinity..cause i is always less than array length unless incremented
+// }
+
+while(i<myStates.length){
+    console.log(myStates[i]);
+    i++
+}
+
+//do while loop ( to execute a condition once  before the while loop starts off )
+
+let c=20;
+
+do{ 
+    console.log(c);
+    c++;
+}while (c<10)  //for lopp doesnt run cos c is > 10 but prints atleast once due to do statement 
