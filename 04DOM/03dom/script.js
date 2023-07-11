@@ -3,8 +3,10 @@ var followers = document.querySelector(".followers");
 
     // can also be done using getElementById and innerHTML
 
-// advantage of query selector is that instead of giving a hug array
+// advantage of query selector is that instead of giving a huge array
 // like getElementsByTagName it just gives the entir line html code
+
+// normally queryselector or getelementbyid is used to grab elements from html
 
 console.log(counter); // prints <h1 class="counter">1004</h1>
 console.log(counter.innerHTML);
