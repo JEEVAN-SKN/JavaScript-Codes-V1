@@ -1,0 +1,37 @@
+// how to grab elements from html page in js 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 class="title">Javascript Learning</h1>
+    </div>
+</body>
+</html>
+
+/* u need to try these js code out in browser console while this html file is live
+// note no need to type console.log(varname)  in browser for printing
+// as it is inside console already , just type varname and enter...
+// (i.e) instead of console.log(title) --> title
+
+var title = document.getElementsByTagName("h1");
+console.log(title); // gives an array (HTMLCollection [h1.title]) containing many meta data (here length =0)
+                    //including innerText and innerHTML in first index 
+
+title = document.getElementsByTagName("h1")[0].innerHTML    // gets value of innerHTML in first index of h1.title array
+console.log(title); // prints Javascript Learning 
+
+title = document.getElementsByClassName("title")[0].innerText
+console.log(title); // prints Javascript Learning 
+
+// also can use getElementById and so on .. check out them in browser console...
+
+
+*/
+
