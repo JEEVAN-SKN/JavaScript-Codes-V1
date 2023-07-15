@@ -67,4 +67,38 @@ subbu.getFirstName();
 // hence we can access,overwrite all the properties and funcitos mentioned in the 
 // proto object of an object in browser console and also add new funcitons/properties 
 
+// protochaining 
+
+User.prototype.pullFirstNamee = function(){
+    console.log(`Your FirstName is: ${this.firstNamee}`); // nonexistent property in user object 
+}
+
+muni.pullFirstNamee();
+    // but this line gives undeifned instead of giving error which is worse
+    //but undefined can have multiple meanings like lastName prop never exist or it was not set 
+            // or that prop was not injected using proto etcc.
+            //but error doesnt create such uncertainity
+            // to avoid this we can use proto's default func and methods ...
+        // such as hasOwnProperty ..
+
+
+// doesnt need to mention prototype here bcs JS direclty injects all these func,methods itself in proto 
+console.log(muni.hasOwnProperty("firstNamee")); // shows you whether that property exists in object 
+            // using this u can write better code  while dealing with chaining with proto methods 
+            // as below
+
+if (muni.hasOwnProperty("firstNamee")){ // doesnt execute as ther is no property named "firstNamee"
+    muni.pullFirstNamee();              // It will execute if u mentioned any existent properties but gives undefined 
+                                        // as till the internal command points to an nonexistent property
+}
+
+
+
+// in browser create an array and console.log it , you will find proto there too 
+        // with  func like fill,filter,every,forEach,pop,push etc..
+        // all those default methods we have been using with arrays a
+        // they can be called direclty without mentioning proto coz JS direclty 
+
+    //You can also define your own custom methods to your array and objects and make it 
+    // available to your users through your project and there lies the beauty of JS
 
