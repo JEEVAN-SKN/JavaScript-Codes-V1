@@ -101,4 +101,4 @@ if (muni.hasOwnProperty("firstNamee")){ // doesnt execute as ther is no property
 
     //You can also define your own custom methods to your array and objects and make it 
     // available to your users through your project and there lies the beauty of JS
-
+    //note: function is a block of code for a task // method is property of an object that has func value 
