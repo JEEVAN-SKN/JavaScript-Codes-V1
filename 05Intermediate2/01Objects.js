@@ -57,6 +57,14 @@ console.log(subbu.firstName);  // but here we canalso direclty create a function
 // and whenever new instances are created for a existing object all these proto based declarations are also 
     // implemented to the new instance of the object
 
-    
+User.prototype.getFirstName = function(){
+    console.log(`Your FirstName is: ${this.firstName}`);
+}
+
+muni.getFirstName();
+subbu.getFirstName();
+
+// hence we can access,overwrite all the properties and funcitos mentioned in the 
+// proto object of an object in browser console and also add new funcitons/properties 
 
 
