@@ -1,3 +1,6 @@
+//new keyword and proto 
+
+
 // // type this in browser console
 //     var lco = {
 //         fname : "jeevan"
@@ -30,15 +33,30 @@ console.log(jeevan);  // here it gives undefined bcs our prototype is nothing bu
     // but inorder to  functionally define an object we need to use "new" keyword which creates 
             // unique object instance for each call
 
-var muni= new User("muni",3);
-console.log(muni);  // gives object details 
-
-var subbu = new User("subramanian",4); // creates a new unique instance of the same object 
-console.log(subbu); 
 
 // new keyword features: 
         // responsible for invoking the constructor and creating an unique instance of the object everytime
-        // takes care of the changes the regular function (line no33) into an instance creating contructor call
+        // takes care of the changing the regular function (line no33) into an instance creating contructor call
         // Changes the this keyword form global (window) object to scope specific contents
+
+
+var muni= new User("muni",3);
+console.log(muni);  // gives object details 
+muni.getCourseCount();
+console.log(muni.firstName);
+
+
+var subbu = new User("subramanian",4); // creates a new unique instance of the same object 
+console.log(subbu); 
+subbu.getCourseCount();
+console.log(subbu.firstName);  // but here we canalso direclty create a function to print firstname instead of console.log
+    // but accessing the source code for every minute functionality addition 
+    // is not advisable (react practices) so we can use proto of the object here 
+
+//proto can be used for accessing to adding(injecting) more properties/functions, getters, setters to objects 
+// and whenever new instances are created for a existing object all these proto based declarations are also 
+    // implemented to the new instance of the object
+
+    
 
 
