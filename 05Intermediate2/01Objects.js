@@ -23,7 +23,7 @@ var User = function (firstName, courseCount){
 }
 
 // now this is similar to classes in other lang
-    // now we have created an protoype foe each user signup
+    // now we have created an protoype foe each user signup(prototype is the porperties included when obj is declared)
     
 var jeevan = User("jeevan",2);
 console.log(jeevan);  // here it gives undefined bcs our prototype is nothing but a function 
