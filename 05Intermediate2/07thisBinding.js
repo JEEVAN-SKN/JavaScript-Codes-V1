@@ -48,6 +48,3 @@ djInfo();
 // call methid direclty executes bind fucntionality
 
 jeevan.getInfo.call(dj);
-
-
-
