@@ -31,8 +31,8 @@ three(); //so it executes three() and meanwhile settimeout finishes its executio
 // so that fronend websites loads up not to upset user 
 
 // but as soon as js was integrated in backend 
-// there may bes some sucessive componenets whose contetns are depedent on the previous loading task
-// hence if these successive  components exeute befire dependant task load in leads to wrong data 
+// there may bes some sucessive componenets whose contents are dependent on the previous loading task
+// hence if these successive  components exeute before dependent task load it leads to wrong data 
 // hence js needs to be synchronous at some instances relate dto backend
 // we'll discuss those things ar next chapter 
 

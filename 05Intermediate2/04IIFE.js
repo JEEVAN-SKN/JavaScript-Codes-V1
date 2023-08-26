@@ -11,3 +11,4 @@ SayHello();
 
 ( function(){console.log("hello")})();
 // declaration in 1st ()         //invoking function
+
