@@ -45,10 +45,10 @@ tipper("5"); // gives result as 55
 // in order to change string to int
 
 function tipperb(a){
-    var bill =parseInt(a); // in order to change string to int
+    var bill =Number(a) || parseInt(a); // in order to change string to int
     console.log(bill+5);
 }
-tipperb("5"); //gives result as 10 by coverting str into int 
+tipperb("11"); //gives result as 10 by coverting str into int 
 
 //Code Hoisting 
 bigTipper(200); //works even when called before decl due to global context 
@@ -94,15 +94,17 @@ console.log(fsname); // gives 'undefined' due 2nd rue of exex cntxt
 var fsname = "Jeevan";// but not error because Global context Knows
     // But we are using it prematurely 
 
+
 function sayName(){
     var fsname = "S K N"; 
     console.log(fsname);
 }
-sayName();// new exec context kicks in and result is S K N
+sayName();
+           // new exec context kicks in and result is S K N
           // after execution cntxt goes off so 
-          // now after in global context fsname is Jeevan
+         // now after in global context fsname is Jeevan
 
 console.log(fsname);// new cntx but here call only after decl
             //so result is Jeevan
 
-            
+ 

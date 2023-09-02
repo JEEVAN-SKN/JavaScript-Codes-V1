@@ -9,17 +9,18 @@
 // theses circles are compared to context
 
 var fname = "Jeevan";
- 
+ let sub = "subject"
 console.log("Line Number 13", fname);
 
 function sayName() {
     var fname = "Mr. J";
+    
     console.log("line number 17", fname);  
     
-    sayNameTwo();
+    sayNameTwo(); //it considers its Mr. J as fname because it is in its scope
      
     function sayNameTwo() {
-        // var fname = "S K N ";
+       // var fname = "S K N ";
         console.log("line no 23", fname);
     }
 }
