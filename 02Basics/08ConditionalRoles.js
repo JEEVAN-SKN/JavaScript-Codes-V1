@@ -30,10 +30,13 @@ read.question('Enter role :',(user)=>{
             console.log("Trial User");
         
     }
-    read.close() 
+    //nesting questions
+    read.question('why are you gay :',(ans)=>{
+        console.log(ans);
+        
+        read.close() 
+     })
+    
 })
 
-read.question('why are you gay :',((ans)=>{
-const answer = ans
-}))
-console.log(answer);
+
