@@ -31,6 +31,18 @@ console.log(myNumber.filter((num) => num !== 55 && num !== 23 ))
 console.log(res);
 console.log( myNumber.filter((num) => num < 55 ))
 
+
+
+const movies = ['batman begins','batman darknight','batman darknight rises','batman vs A**H***']
+const search = "batman dar"
+const findMovie = movies.filter(prop=>{
+       return prop.startsWith(search)
+})
+
+console.log(findMovie);
+// this is a simple example how search works
+
+
 // Slice 
 
 var users = ["Ted", "Tim", "Ton", "Sam", "Sor", "Sod"];
