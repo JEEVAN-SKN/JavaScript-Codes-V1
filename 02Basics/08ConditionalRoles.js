@@ -32,3 +32,8 @@ read.question('Enter role :',(user)=>{
     }
     read.close() 
 })
+
+read.question('why are you gay :',((ans)=>{
+const answer = ans
+}))
+console.log(answer);
