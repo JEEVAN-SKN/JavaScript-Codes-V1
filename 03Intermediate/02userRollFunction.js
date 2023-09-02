@@ -37,7 +37,13 @@ var getUserRole = (name,role) => {
 console.log(getUserRole("Jeevan","user")); // this works but below doesnt work
 
 getUserRole("Jeevan","user"); //updates values in db
-console.log(getUserRole); // doesnt print value, only shows function info 
+console.log(getUserRole); // doesnt print value, only shows type
+
+//it can be done by assignig to a variable
+
+const jeev = getUserRole("jeevan","user")
+
+console.log(jeev);
 
 //you can assign the function results to another variable 
 var getRole = getUserRole("Muni", "other");
