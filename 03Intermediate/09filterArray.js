@@ -47,11 +47,14 @@ console.log(findMovie);
 
 var users = ["Ted", "Tim", "Ton", "Sam", "Sor", "Sod"];
 
-console.log(users.slice(2));
+console.log(users.slice(2)); //out:[ 'Ton', 'Sam', 'Sor', 'Sod' ]
+//if 2 it delets 0 and 1 index
 // used  with single argument then it, slices from that index(inclusive) 
 // till end and outputs it 
 
-console.log(users.slice(2,5));
+console.log(users.slice(2,5)); //out:[ 'Ton', 'Sam', 'Sor' ]
+
+//2,5 deletes 1st 2 index(0,1) and deletes everythin from  5th index(including)
 // 2 arguments gives part of array mentioned
 // start 2(inclusive), end 5(exclusive)
 
@@ -59,16 +62,17 @@ console.log(users.slice(2,5));
 
 
 users.splice(1,2,5,8);
-console.log(users);
+console.log(users); //out:[ 'Ted', 5, 8, 'Sam', 'Sor', 'Sod' ]
 //starts form index 1 and deletes 2 elements as mentioned in secind argument(count)
 // then replaces them with consecutively given arguments 
 
 users.splice(1,4,2,1,3,5);
-console.log(users);
+console.log(users); //out:[ 'Ted', 2, 1, 3, 5, 'Sod' ]
 
 
 users.splice(1,2,5);
-console.log(users);
+console.log(users);//out:[ 'Ted', 5, 3, 5, 'Sod' ]
+                //it takes 2 elements from index 1 and replace it with 5
 //if arguments given to replace is less than the count deleted 
 //then ignores that index and left shifs all other 
 
