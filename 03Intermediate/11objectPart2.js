@@ -120,7 +120,7 @@ var setofUsers = [{
 }]
 
 setofUsers.map((key)=>{
-    if(key.id === 100){
+    if(key.id === 100){ //accessing each element thru id
         key.buyCourse("python","java","angular","blove")
     }
     if(key.id === 101){

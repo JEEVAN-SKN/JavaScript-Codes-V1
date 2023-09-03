@@ -10,8 +10,15 @@ var user = {
     getCourseCount: function() {  ///method inside a object 
         console.log(this);   // this points to the whole object itself
                                 // smaein browser with some added proto etc..
+
+                               
     },
 };
+//  //out:{
+//   firtsName: 'hitesh',
+//   courseCount: 4,
+//   getCourseCount: [Function: getCourseCount]
+// }
 
 user.getCourseCount(); // invoking the method
 
@@ -31,10 +38,10 @@ var candidate = {
     firtsName : "hitesh",
     courseCount : 4,
     getCourseCount: function() {  ///method inside a object 
-        console.log(this);   
+        console.log(this); //this works 
         function hello(){  //even inside object regular func always points to global/window object
             console.log("Hi");
-            console.log(this);
+            console.log(this); //but its not working bcs there is  no objects here
         }
         hello();
     },
