@@ -65,5 +65,33 @@ var result = [2,4,6,8].every((e) => e % 2 ===0);
 
 //either use without () but for less confusion use ()
 
-var result = [2,4,3,8].every((e) => (e % 2 ===0)); 
+var result = [2,4,3,8].every(e => (e % 2 ===0)); 
   console.log(result);
+
+//for checking each and every element
+
+const arr_new = [2,4,3,8]
+
+var res = arr_new.map(e => {
+  let boo = true
+  if( e % 2 ===0){
+   
+    console.log(e,boo); //out:2 true 4 true 8 true
+  }else{
+   boo = false
+    console.log(e,boo);//out:3 false
+  }
+  return {e,boo} //now we converted the whole res into a array
+}); 
+  console.log(result);
+
+  console.log(res);
+  //out:
+  // [
+  //   { e: 2, boo: true },
+  //   { e: 4, boo: true },
+  //   { e: 3, boo: false },
+  //   { e: 8, boo: true }
+  // ]
+
+  
