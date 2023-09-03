@@ -32,3 +32,25 @@ var smartPhone = {
 }
 
 console.table(smartPhone);
+
+/*
+┌──────────────────┬──────────┐
+│     (index)      │  Values  │
+├──────────────────┼──────────┤
+│    firstName     │ 'Jeevan' │
+│     lastName     │ 'S K N'  │
+│       role       │  'user'  │
+│    loginCount    │    44    │
+│ facebookSignedIn │   true   │
+└──────────────────┴──────────┘
+┌─────────────────┬───────────────┐
+│     (index)     │    Values     │
+├─────────────────┼───────────────┤
+│    modelName    │ 'Samsung M32' │
+│       ram       │     '6gb'     │
+│       rom       │    '128gb'    │
+│   rearCamera    │    '72mp'     │
+│   frontCamera   │    '27mp'     │
+│ batteryCapacity │   '6000Mah'   │
+└─────────────────┴───────────────┘
+*/ 

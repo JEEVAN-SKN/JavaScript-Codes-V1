@@ -47,3 +47,91 @@ console.log(user.buyCourse("MernCourse")); //prints undefined as no return state
                         // just adds a MernCourse entry in courseList array 
 console.log(user.courseList)
 
+
+
+var setofUsers = [{
+    id:100,
+    firstName : "Jeevan",
+    lastName : "S K N",
+    role : "user",
+    loginCount : 32,
+    facebookSignedIn : true,
+    courseList : [],
+    buyCourse : function (...courseName) { //for giving set of inputs
+        this.courseList.push(...courseName); //pushing set of inputs
+    },
+    getCourseCount: function () {
+        return `${this.firstName} is enrolled in total of ${this.courseList.length} courses`;
+    },
+    info : function () {
+        return `The firstName is ${this.firstName} 
+                The lastName is ${this.lastName}
+                The role is ${this.role}
+                The loginCount is ${this.loginCount}
+                The status of FacebookSign in is ${this.facebookSignedIn}
+                The courselist is ${this.courseList} `
+    }
+},
+{
+    id:101,
+    firstName : "Jeevigaa",
+    lastName : "S K N",
+    role : "user",
+    loginCount : 32,
+    facebookSignedIn : true,
+    courseList : [],
+    buyCourse : function (...courseName) {
+        this.courseList.push(...courseName);
+    },
+    getCourseCount: function () {
+        return `${this.firstName} is enrolled in total of ${this.courseList.length} courses`;
+    },
+    info : function () {
+        return `The firstName is ${this.firstName} 
+                The lastName is ${this.lastName}
+                The role is ${this.role}
+                The loginCount is ${this.loginCount}
+                The status of FacebookSign in is ${this.facebookSignedIn}
+                The courselist is ${this.courseList} `
+    }
+},
+{
+    id:102,
+    firstName : "Niggarun",
+    lastName : "S K N",
+    role : "user",
+    loginCount : 32,
+    facebookSignedIn : true,
+    courseList : [],
+    buyCourse : function (...courseName) {
+        this.courseList.push(...courseName);
+    },
+    getCourseCount: function () {
+        return `${this.firstName} is enrolled in total of ${this.courseList.length} courses`;
+    },
+    info : function () {
+        return `The firstName is ${this.firstName} 
+                The lastName is ${this.lastName}
+                The role is ${this.role}
+                The loginCount is ${this.loginCount}
+                The status of FacebookSign in is ${this.facebookSignedIn}
+                The courselist is ${this.courseList} `
+    }
+}]
+
+setofUsers.map((key)=>{
+    if(key.id === 100){
+        key.buyCourse("python","java","angular","blove")
+    }
+    if(key.id === 101){
+        key.buyCourse("dsa","bzzs","NA","EA")
+    }
+    if(key.id === 102){
+        key.buyCourse("priCum","Defeated","MTS","MT")
+    }
+ 
+})
+
+setofUsers.map((key)=>{
+    console.log(key);
+})

@@ -72,7 +72,9 @@ console.log(users); //out:[ 'Ted', 2, 1, 3, 5, 'Sod' ]
 
 users.splice(1,2,5);
 console.log(users);//out:[ 'Ted', 5, 3, 5, 'Sod' ]
+
                 //it takes 2 elements from index 1 and replace it with 5
+
 //if arguments given to replace is less than the count deleted 
 //then ignores that index and left shifs all other 
 
@@ -81,7 +83,9 @@ console.log(users);//out:[ 'Ted', 5, 3, 5, 'Sod' ]
         // - c,d,.. : elemnts to be added there 
 
 
+//slice - remove
 
+//splice - remove and add
 
 
 
