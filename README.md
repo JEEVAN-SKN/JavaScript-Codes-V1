@@ -1,4 +1,4 @@
-# JavaScript-Codes
+# JavaScript-Codes-V1
 
 This repo contains all the codes that I have executed and assignments finished while learning Javascript
 through a playlist from youtube channel named Hitesh Choudary.
