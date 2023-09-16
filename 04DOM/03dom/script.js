@@ -22,7 +22,7 @@ console.log(counter.innerHTML);
     //setInterval(function,milliseconds)
 let count = -1;
 
-
+//this is called an evant and it is handled by browser
 setInterval(() =>{  //increases count vaue form 0 - 1000
     if(count<=1000){
    counter.innerText = count; //or innerHTML

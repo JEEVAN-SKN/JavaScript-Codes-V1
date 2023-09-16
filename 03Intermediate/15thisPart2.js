@@ -9,9 +9,7 @@ var user = {
     courseCount : 4,
     getCourseCount: function() {  ///method inside a object 
         console.log(this);   // this points to the whole object itself
-                                // smaein browser with some added proto etc..
-
-                               
+                                // smaein browser with some added proto etc.                            
     },
 };
 //  //out:{
