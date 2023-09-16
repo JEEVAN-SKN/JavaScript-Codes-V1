@@ -1,7 +1,8 @@
 // this -- for all regular functions this points to window object 
 // inside an object it points to the object 
 
-console.log(this);  // in node it points to an empty object
+
+  // in node it points to an empty object
 //in browser it points to window object
 
 var user = {
@@ -12,13 +13,12 @@ var user = {
                                 // smaein browser with some added proto etc.                            
     },
 };
+user.getCourseCount(); // invoking the method
 //  //out:{
 //   firtsName: 'hitesh',
 //   courseCount: 4,
 //   getCourseCount: [Function: getCourseCount]
 // }
-
-user.getCourseCount(); // invoking the method
 
 // Note that this is not an regular function call , it is invoking a method thru an object 
 //but wwhen we use "this" within jn a regular function call we get the window object in browser 
@@ -30,7 +30,7 @@ function sayHello(){
 }
 sayHello();
 
-// even if we put an regular function inside an object it still points to the eindow/global object 
+// even if we put an regular function inside an object it still points to the window/global object 
 
 var candidate = {
     firtsName : "hitesh",
@@ -44,5 +44,9 @@ var candidate = {
         hello();
     },
 };
+
+//simply 'this' is nothing but it contains the objects in the block
+
+// a block is { ...//code inside }
 
 candidate.getCourseCount();
