@@ -10,13 +10,20 @@ const myStates = [
     2023,
     "TamilNadu",
     "Kerala",
+    56783,
     "Assam",
+    false
     
 ]
 
 for ( i=0; i<myStates.length; i++) {  //printing the etries of array
     console.log(myStates[i]);
 }
+
+// or in map
+myStates.map(k=>console.log(k))  //out:[ 'Rajasthan', 'Delhi', 'TamilNadu', 'Kerala', 'Assam' ]
+
+
 
 // now in case we only need a particluar datatype data form these arrays 
 // we can add if case combined with the power of 'contine' and 'break' controlling the loops control flow
@@ -28,12 +35,22 @@ for ( i=0; i<myStates.length; i++) {
     console.log(myStates[i]);                       // ont o next iteration (continue)
 }
 
+//using filter
+
+const onlyStrings = myStates.filter(k=> typeof k === 'string')
+console.log(onlyStrings);
+
+
 
 console.log("EVERYTHING except strings");
 for ( i=0; i<myStates.length; i++) {  
     if (typeof myStates[i] == "string") continue;  //when array element is string ignores rest of code and goes 
     console.log(myStates[i]);                       // ont o next iteration (continue)
 }
+//using filter
+const exceptStrings = myStates.filter(k=>typeof k !== 'string')
+//out:[ 2023, 56783, false ]
+
 
 console.log("STOP when element not string ");
 for ( i=0; i<myStates.length; i++) {  
@@ -64,6 +81,6 @@ let c=20;
 do{ 
     console.log(c);
     c++;
-}while (c<10)  //for lopp doesnt run cos c is > 10 but prints atleast once due to do statement 
+}while (c<10)  //for lo0p doesnt run cos c is > 10 but prints atleast once due to do statement 
 
 //upcoming forEach loop

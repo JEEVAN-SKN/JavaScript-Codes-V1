@@ -9,21 +9,28 @@ body {
 .red {
   background: #e44236;
   margin-right: 5px;
+  animation: rotation 5s ease infinite ;
 }
 .cyan {
   background: #25ccf7;
   margin-right: 5px;
+ 
+  animation: rotation 5s ease infinite ;
 }
 .violet {
   background: #8b78e6;
   margin-right: 5px;
+  animation: rotation 5s ease infinite ;
 }
 .orange {
   background: #ea7773;
   margin-right: 5px;
+  animation: rotation 5s ease infinite ;
 }
 .pink {
   background: #bb2cd9;
+
+  animation: rotation 5s ease infinite ;
 }
 
 .center {
@@ -32,6 +39,7 @@ body {
   background: rgb(66, 66, 66);
   border-radius: 100%;
   transition: 0.2s ease-in-out all;
+  animation: rotation 5s ease-in-out infinite ;
 }
 .color-hover {
   position: absolute;
@@ -59,4 +67,16 @@ body {
 }
 .color:last-child {
   margin-bottom: 0;
+}
+
+@keyframes rotation {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+  0%{
+    transform: rotate(0deg);
+  }
 }
