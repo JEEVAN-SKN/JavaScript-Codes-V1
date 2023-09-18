@@ -9,4 +9,4 @@ through a playlist from youtube channel named Hitesh Choudary.
           - A beginner with atmost basic programming knowledge interested in learning Javascript
 
 ## Contribute:
-          - Feel free to add more of your own explantions, examples and additional concepts by creating a pull request.
+          - Feel free to add more of your own explanations, examples and additional concepts by creating a pull request.
