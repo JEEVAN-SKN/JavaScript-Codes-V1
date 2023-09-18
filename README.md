@@ -8,5 +8,5 @@ through a playlist from youtube channel named Hitesh Choudary.
           - Someone who wants to revise Javascript concepts from basics 
           - A beginner with atmost basic programming knowledge interested in learning Javascript
 
-## Contributions:
+## Contribute:
           - Feel free to add more of your own explantions, examples and additional concepts by creating a pull request.
