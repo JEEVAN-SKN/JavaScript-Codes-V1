@@ -50,7 +50,7 @@ class Player{ // just the same class we created in previous js file
  const biker = new Player;
 
  biker.enrollCourse("Mudroad Biking");
- console.log(biker.getCourse());  // igves output 
+ console.log(biker.getCourse());  // gives output 
  console.log(biker.courseList); //shows undefned as courseList is private variable 
                         // only accessible through the object method 
 

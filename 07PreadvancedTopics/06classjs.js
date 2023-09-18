@@ -3,8 +3,8 @@
  class User{
     // name = ""; // can be predefined here before use in constructor but not needed
 
-    constructor(name,email){ // constructor is method executed as sonn as objects is created 
-                            // you can define it or an emptu constructor will be created by itself
+    constructor(name,email){ // constructor is method executed as soon as objects is created 
+                            // you can define it or an empty constructor will be created by itself
         this.name = name; 
         this.email = email;
     }

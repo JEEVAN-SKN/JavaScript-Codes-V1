@@ -1,6 +1,6 @@
-// inhertance - a child class can inherit some or all of the parent class features
+// inheritance - a child class can inherit some or all of the parent class features
 
-class Student {   //norma;p class decl (parent clas here)
+class Student {   //normal class decl (parent clas here)
     constructor(name,age){
         this.name = name;
         this.age = age;
