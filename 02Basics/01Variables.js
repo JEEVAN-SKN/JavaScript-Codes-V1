@@ -1,6 +1,6 @@
 //naming variables standards: fullName (camelcasing), full_name (snakecasing)
 
-//assigning variables
+//assigning values to variables ( by default variables are assigned undefined datatype)
 var fullName = "S K N JEEVAN"; // string 
 
 console.log(fullName); //out:S K N JEEVAN
