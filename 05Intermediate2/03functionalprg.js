@@ -3,13 +3,14 @@
 
 let score = 456;
 
-function addBonus(){
+function addBonus(){  //here function dependent on variable "score"
     score = score + 45;
     return score;
 }
 
 //Functional prog style 
-        function addBonus(score){
+        function addBonus(score){  //function doesnt need to know of any variables
+                        // it just adds 45 to whatever value given (hence functions and variables kept separate )
             return score+45;      // less time debugging
         }                         // no global variable stuff 
 // as shown above in fucn prog->  first rule :  keep data and function separate
