@@ -26,16 +26,16 @@ jeevan = "how r u ";
     jeevan3 = "how r u ";
         // even if new var declared avoid chamnging state of an already declared var 
 
-// 3rd rule: treat fucntions as orst class citizens 
+// 3rd rule: treat functions as first class citizens 
 
 const h = 5;
 const name = "Jeevan"
         // here we can assign whatever value to a variable 
         // pass them in func , return them in func
 
-        //the same way function should also be able declared anywhere 
+        //the same way function should also be able to be declared anywhere 
         // it can be stored in a variale
-        //it can be passed as a parameter in another func 
+        // it can be passed as a parameter in another func 
         // can be used inside another functions
 
         
