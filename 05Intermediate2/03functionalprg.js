@@ -8,6 +8,7 @@ function addBonus(){  //here function dependent on variable "score"
     return score;
 }
 
+// first rule :  keep data and function separate
 //Functional prog style 
         function addBonus(score){  //function doesnt need to know of any variables
                         // it just adds 45 to whatever value given (hence functions and variables kept separate )
