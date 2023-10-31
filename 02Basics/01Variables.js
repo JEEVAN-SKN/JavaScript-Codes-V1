@@ -20,10 +20,15 @@ var paymentmode ;
 
  console.log(paymentmode); //out:null
 
+ paymentmode = "null";
+
+ console.log(paymentmode);
+
  paymentmode = "paid";
 
  console.log(paymentmode); //out:paid
 
+ console.log(paymentmode) // dont need semicolon atlast but needed if next command in same line
 
 
 
