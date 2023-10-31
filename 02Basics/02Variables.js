@@ -1,11 +1,12 @@
 const name = "Jeevan";
- // name = "jeeva";  -- error as u cannot change constant
+//  name = "jeeva";  //-- error as u cannot change constant
 
 const uid = "abc123";
 
 var firstName = "Jeevan";
 var lastName  = "S K N"
 var email = "skn@jeev.com";
+var phone = 7636636363;
 var country = "India";
 var state = "Tamilnadu";
 var password = "132453";
