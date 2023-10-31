@@ -5,11 +5,11 @@ console.log("Hello Jeevan");
 
 // JS - versions - ES6, ES8 and many more 
 
-// How to execute Javascript code  :- 
-//     Browsers have built in engines for execution 
-//     Can Also be done with Js Engines in system - V8, Spider Monkey, Node 
-//             Eg: node script.js ( in specific directory command line)
-
+/* How to execute Javascript code  :- 
+    Browsers have built in engines for execution 
+     Can Also be done with Js Engines in system - V8, Spider Monkey, Node 
+             Eg: node script.js ( in specific directory command line)
+*/
 
 // Note :
 //In our session when we illustrate more than one concepts or example , I may have commented out some code for less 
