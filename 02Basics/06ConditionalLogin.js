@@ -37,7 +37,7 @@ if(email && facebook && google){ //and operator
 
 var accounts = {email,facebook,google}
 
-if(Object.values(accounts).forEach(acc=>
+if(Object.values(accounts).forEach( acc =>    //Object.values()
     acc)){ //checks whether all elements of object are true
     console.log("all accounts linked");
 }else{
