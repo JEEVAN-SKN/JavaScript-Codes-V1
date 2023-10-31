@@ -1,9 +1,8 @@
 var num1 = 7;
 var num2 = 6;
-
 console.log(num1 * num2); //out:42
 
-var answer = num1 > num2;
+var answer = num1 < num2;
 
 console.log(answer); //out:true
 
@@ -17,6 +16,5 @@ console.log("The Discounted Percentage is: ", Math.round(discountPercent)); //ou
 
 
 var result = listingPrice > sellingPrice;
-
+console.log(result);
 console.log(typeof(result)); //out:booleaan
-
