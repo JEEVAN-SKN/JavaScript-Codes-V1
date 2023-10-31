@@ -14,7 +14,7 @@ console.log(user); //out:undefined  ( Data type :String)
 var user = null;   
 console.log(user);  //out:null (Data type :null)
 
-if(user) {
+if(!user) {
     console.log("Condition is true"); 
 }
 
@@ -49,8 +49,8 @@ if ( user === '2') {    //but not gonna work with strict '==='
     console.log("Bye");
 }
 
-if ( user === 2) {    //but not gonna work with strict '==='
-    console.log("Hi");
+if ( user === 2) {    
+    console.log("hi");
 } else {
     console.log("Bye");
 }

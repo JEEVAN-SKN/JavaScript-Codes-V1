@@ -33,13 +33,22 @@ const read = readline.createInterface({
                     
                 }
                 //nesting questions
-                read.question('why are you gay :',(ans)=>{
-                    console.log(ans);
+                read.question('What is your name :',(ans)=>{
+                    console.log(`Your name is ${ans}`);
+
+                    read.question('What is your age :',(ans)=>{
+                        console.log(`Your age is ${ans}`);
+                        
+                        read.close() 
+                     })
                     
-                    read.close() 
+                    
                  })
+                 
                 
-            })  
+            })
+            
+            
         }
         
         chatBot()
