@@ -41,7 +41,7 @@ if(Object.values(accounts).forEach( acc =>    //Object.values()
     acc)){ //checks whether all elements of object are true
     console.log("all accounts linked");
 }else{
-    for (const [account,linked] of Object.entries(accounts)){ 
+    for (const [account,linked] in Object.entries(accounts)){ 
         //saves all accounts into account and values to linked
         //if any of the linked value is false 
         // if executes
