@@ -35,6 +35,9 @@ if(email && facebook && google){ //and operator
 
 //other way by accessing objects
 
+// the below code is for showing how to use objects to do the same 
+        //beginners please ignore , u will learn about objects and functions later 
+
 var accounts = {email,facebook,google}
 
 if(Object.values(accounts).forEach( acc =>    //Object.values()
