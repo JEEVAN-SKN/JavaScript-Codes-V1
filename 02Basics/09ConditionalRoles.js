@@ -38,6 +38,7 @@ const read = readline.createInterface({
 
                     read.question('What is your age :',(ans)=>{
                         console.log(`Your age is ${ans}`);
+                        read.close()
                      })
                     
                     
