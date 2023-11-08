@@ -50,6 +50,22 @@ arrayfromtest[2][1] = "solved"
 console.log(arrayfromdemo,arrayfromtest);  // output [ [ 1, 2 ], [ 2, 3 ], [ 3, 'solved' ] ] [ [ 1, 2 ], [ 2, 3 ], [ 3, 'solved' ] ]
             // both changes 
 
+//SOLUTION  -->  JSON.parse( a string is converted into an object) 
+        // and JSON.stringify (An object is converted to a string)
+
+        var deepArray = [[1,2], [2,3], [3,5]]
+
+        var deepCopy = JSON.parse(JSON.stringify(deepArray))
+        
+     
+        deepCopy[0][0] = "hello"
+        
+        console.log(deepArray,deepcopy)
+     
+
+
+
+
 
 
  
