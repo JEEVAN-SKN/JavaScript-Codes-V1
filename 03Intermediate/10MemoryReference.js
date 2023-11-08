@@ -19,3 +19,10 @@ console.log(newarray,slicearray,spreadarray); //[ 1, 2, 4, 5 ] [ 1, 2, 'hello', 
 // so we can use either spread operator or slice method to copy array 
 
 // LIMITATIONS with spread and slice 
+    // they only work upto one dimension or level
+        //if we use them on two dimensional arrays they dont work the same way
+
+let spreaddemo = [[1,2],[2,3],[3,4]]
+let spreadtest = spreaddemo
+spreadtest[2][2] = "hello"
+console.log(spreaddemo,spreadtest);
